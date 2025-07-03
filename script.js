@@ -17,7 +17,7 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
     list.appendChild(listItem);
 
     document.getElementById('myForm').reset();
-  } else if (Number(age) < 20) {
+  } else if (Number(age) <= 18) {
     messageDiv.textContent = "Your age must be more than 18";
     messageDiv.style.color = "red";
   } else {
